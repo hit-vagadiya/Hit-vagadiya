@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .common{
+            height: 200px;
+            width: 200px;
+            display: inline-block;
+            border-radius: 100%;
+            animation-name: ball;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+            animation-direction: alternate;
+        }
+
+        .bl1{
+            background-color: black;
+            animation-delay: 0.4s;
+        }
+        .bl2{
+            background-color: blue;
+            animation-delay: 0.3s;
+        }
+        .bl3{
+            background-color: rgb(254, 5, 5);
+            animation-delay: 0.2s;
+        }
+        .bl4{
+            background-color: chocolate;
+            animation-delay: 0.1s;
+        }
+        .bl5{ 
+            background-color: chartreuse;
+        }
+        .bl6{
+            background-color: darkorange;
+            animation-delay: 0.1s;
+        }
+        .bl7{
+            background-color: blanchedalmond;
+            animation-delay: 0.2s;
+        }
+        .bl8{
+            background-color: aquamarine;
+            animation-delay: 0.3s;
+        }
+        .bl9{
+            background-color: darkturquoise;
+            animation-delay: 0.4s;
+        }
+        @keyframes ball {
+            0%{
+                transform: translateY(0px);
+            }
+            100%{
+                transform: translateY(700px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="common bl1"></div>
+    <div class="common bl2"></div>
+    <div class="common bl3"></div>
+    <div class="common bl4"></div>
+    <div class="common bl5"></div>
+    <div class="common bl6"></div>
+    <div class="common bl7"></div>
+    <div class="common bl8"></div>
+    <div class="common bl9"></div>
+</body>
+</html>

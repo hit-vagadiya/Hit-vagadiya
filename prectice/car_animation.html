@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .all {
+            background-image: url('./assets/bg.jpg');
+            height: 900px;
+            width: 1880px;
+            background-size: 100% 100%;
+            position: relative;
+        }
+
+        .common {
+            height: 140px;
+            width: 140px;
+            position: absolute;
+            animation-iteration-count: infinite;
+        }
+
+        .car1 {
+            top: 51px;
+            animation-name: right;
+            animation-duration: 7s;
+            animation-timing-function: ease-out;
+        }
+
+        .car2 {
+            top: 127px;
+            animation-name: wrong;
+            animation-duration: 4s;
+            animation-timing-function: ease-in;
+        }
+
+        .car3 {
+            top: 244px;
+            left: -300px;
+            animation-name: right;
+            animation-duration: 4s;
+            animation-delay: 3s;
+            animation-timing-function: ease-in;
+        }
+
+        .car4 {
+            top: 302px;
+            animation-name: wrong;
+            animation-duration: 5s;
+            animation-timing-function: ease-out;
+        }
+
+        .car5 {
+            top: 436px;
+            animation-name: right;
+            animation-duration: 9s;
+            animation-timing-function: initial;
+        }
+
+        .car6 {
+            top: 505px;
+            animation-name: wrong;
+            animation-duration: 8s;
+            animation-timing-function: initial;
+        }
+
+        .car7 {
+            top: 625px;
+            animation-name: right;
+            animation-duration: 6s;
+            animation-timing-function: ease-out;
+        }
+
+        .car8 {
+            top: 688px;
+            animation-name: wrong;
+            animation-duration: 6s;
+            animation-timing-function: ease-in;
+        }
+
+        @keyframes right {
+            0% {
+                transform: translateX(-300px);
+            }
+
+            100% {
+                transform: translateX(2000px);
+            }
+        }
+
+        @keyframes wrong {
+            0% {
+                transform: translateX(2000px);
+            }
+
+            100% {
+                transform: translateX(-400px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all">
+        <img class="common car1" src="./assets/right.png" alt="car1">
+        <img class="common car2" src="./assets/wrong.png" alt="car2">
+        <img class="common car3" src="./assets/right.png" alt="car3">
+        <img class="common car4" src="./assets/wrong.png" alt="car4">
+        <img class="common car5" src="./assets/right.png" alt="car5">
+        <img class="common car6" src="./assets/wrong.png" alt="car6">
+        <img class="common car7" src="./assets/right.png" alt="car7">
+        <img class="common car8" src="./assets/wrong.png" alt="car8">
+    </div>
+</body>
+
+</html>
